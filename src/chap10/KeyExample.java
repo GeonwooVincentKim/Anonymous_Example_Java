@@ -8,6 +8,9 @@ public class KeyExample {
     public static void main(String[] args) {
         HashMap<Key, String> hashMap = new HashMap<Key, String>();
         // out.print(hashMap);
-        out.print(hashMap.put(new Key(1), "홍길동"));
+        hashMap.put(new Key(1), "홍길동");
+
+        String value = hashMap.get(new Key(1));
+        out.println(value);
     }
 }
