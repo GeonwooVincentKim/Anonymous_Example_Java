@@ -36,5 +36,16 @@ public class ArrayListExample {
         }
 
         out.println();
+
+        list.remove(2);
+        out.println(list);
+
+        list.remove(2);
+        out.println(list);
+
+        for (int i = 0; i < list.size(); i++) {
+            String str = list.get(i);
+            out.println(i + " : " + str);
+        }
     }
 }
