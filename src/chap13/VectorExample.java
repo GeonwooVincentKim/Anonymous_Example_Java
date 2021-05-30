@@ -10,7 +10,39 @@ public class VectorExample {
         List<Board> list = new Vector<Board>();
         out.println(list);
 
-        list.add(new Board("제목1", "내용1", "글쓴이"));
+        list.add(new Board("제목1", "내용1", "글쓴이1"));
         out.println(list);
+
+        list.add(new Board("제목2", "내용2", "글쓴이2"));
+        list.add(new Board("제목3", "내용3", "글쓴이3"));
+        out.println(list);
+
+        list.add(new Board("제목4", "내용4", "글쓴이4"));
+        list.add(new Board("제목5", "내용5", "글쓴이5"));
+        out.println(list);
+
+        for (int i = 0; i < list.size(); i++) {
+            Board board = list.get(i);
+            out.println(board.subject + "\t" + board.content + "\t" + board.writer);
+        }
+
+        list.remove(2);
+        list.remove(3);
+
+        for (int i = 0; i < list.size(); i++) {
+            Board board = list.get(i);
+            out.println(board.subject + "\t" + board.content + "\t" + board.writer);
+        }
+
+        List<String> list2 = new Vector<String>();
+        out.println(list2);
+
+        list2.add("1");
+        list2.add("25");
+        list2.add("36");
+        list2.add(3, "2");
+        list2.add(2, "15");
+
+        out.println(list2);
     }
 }
