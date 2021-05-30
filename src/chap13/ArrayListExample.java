@@ -25,5 +25,16 @@ public class ArrayListExample {
         int size = list.size();
         out.println("총 객체 수 : " + size);
         out.println();
+
+        String skill = list.get(2);
+        out.println("2: " + skill);
+        out.println();
+
+        for (int i = 0; i < list.size(); i++) {
+            String str = list.get(i);
+            out.println(i + " : " + str);
+        }
+
+        out.println();
     }
 }
