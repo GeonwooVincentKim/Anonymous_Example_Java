@@ -31,5 +31,18 @@ public class LinkedListExample {
         out.println("ArrayList - endTime : " + endTime);
 
         out.println("ArrayList - 걸린 시간 : " + (endTime - startTime) + " ns");
+
+        out.println("--------------");
+
+        startTime = System.nanoTime();
+        for (int i = 0; i < 10000; i++) {
+            list2.add(0, String.valueOf(i));
+        }
+
+        endTime = System.nanoTime();
+        out.println("LinkedList - startTime : " + startTime);
+        out.println("LinekdList - endTime : " + endTime);
+
+        out.println("LinkedList - 걸린 시간 : " + (endTime - startTime) + " ns");
     }
 }
