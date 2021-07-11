@@ -4,7 +4,17 @@ import static java.lang.System.out;
 
 import java.util.Scanner;
 
+import lottery_number_test.Attributes.FileAttribute.FileAttributes;
+
 public class DuplicateNumber {
+    public static Scanner readFile(FileAttributes fileAttribute, String fileName) {
+        return fileAttribute.readFile(fileName);
+    }
+
+    public static void writeFile(FileAttributes fileAttribute, String fileName, String result){
+        fileAttribute.writeFile(fileName, result);
+    }
+
     public static int getRandomNumber(int minimum, int maximum) {
         return (int) (Math.random() * (maximum - minimum + 1)) + minimum;
     }
@@ -37,6 +47,7 @@ public class DuplicateNumber {
 
         if (userSelection == 1) {
             out.println(userSelection);
+
         } else if (userSelection == 2) {
             out.println(userSelection);
         }
