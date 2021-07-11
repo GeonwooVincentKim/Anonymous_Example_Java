@@ -1,4 +1,4 @@
-package lottery_number_test.FileAttribute;
+package lottery_number_test.Attributes;
 
 import java.util.Scanner;
 
