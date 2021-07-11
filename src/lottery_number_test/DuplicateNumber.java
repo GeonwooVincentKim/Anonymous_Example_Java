@@ -5,6 +5,30 @@ import static java.lang.System.out;
 import java.util.Scanner;
 
 public class DuplicateNumber {
+    public static int getRandomNumber(int minimum, int maximum) {
+        return (int) (Math.random() * (maximum - minimum + 1)) + minimum;
+    }
+
+    public static int[] getRandomArray(int userLength) {
+        int[] randomArray = new int[userLength];
+
+        for (int i = 0; i < userLength; i++) {
+            randomArray[i] = getRandomNumber(10, 50);
+        }
+
+        return randomArray;
+    }
+
+    public static String printRandomArray(int[] randomArray) {
+        String loopResult = "";
+
+        for (int i = 0; i < randomArray.length; i++) {
+            loopResult += randomArray[i] + " ";
+        }
+
+        return loopResult;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
