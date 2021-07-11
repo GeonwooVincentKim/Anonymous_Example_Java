@@ -13,6 +13,7 @@ public class LotteryNumberTest {
 
         for (int i = 0; i < userSelectLength; i++) {
             lengthArray[i] = (int) (Math.random() * (50 - 10 + 1)) + 1;
+            out.print(lengthArray[i] + " ");
             int number = lengthArray[i];
 
             if (lengthArray[i] == number) {
