@@ -1,6 +1,6 @@
 # ArrayList vs LinkedList vs Vector
 
-## 속도 (값이 클수록 더 빠름)
+## 속도 (값이 작을수록 더 빠름)
 - LinkedList > ArrayList >= Vector (or)
 -  LinkedList > Vector >= ArrayList 
 
